@@ -1,0 +1,12 @@
+Package: Touchdown
+Version: 0.1
+Type: Package
+Title: Tools interacting the Yahoo Fantasy Football API
+Description: This package interfaces with the Yahoo Fantasy 
+	Football API and enables scraping player stats 
+	from the Yahoo stats page.
+Author: Ryan Kuhn
+Maintainer: Ryan Kuhn <ryan@ryankuhn.net>
+License: GPL
+Imports: XML, RJSONIO, httr
+URL: htto://github.com/kuhnrl30/touchdown
