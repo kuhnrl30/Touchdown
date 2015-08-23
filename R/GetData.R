@@ -1,9 +1,11 @@
 #' Retrieve stats data
 #'
-#' Uses the inputs to create a URI and then scrapes 
-#' the Yahoo page to return desired the stats table.
+#' Reads the HTML table with player statistics based on
+#. the given URI and returns a dataframe.
 #'
-#' @param URI string used to retrieve the relevant stats table
+#' @param URI string value. Properly formatted URI string. 
+#' When sent to a browser, this URI would show Yahoo's 
+#' NFL player stats page.
 #' @return a dataframe with the player statistics
 #' @import XML
 

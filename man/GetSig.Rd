@@ -2,19 +2,21 @@
 % Please edit documentation in R/GetSig.R
 \name{GetSig}
 \alias{GetSig}
-\title{Get authenticated to use the Yahoo API}
+\title{Sets up the OAuth signature credential with the Yahoo API}
 \usage{
 GetSig(key, secret)
 }
 \arguments{
-\item{key}{string, provided by the Yahoo Developer network
+\item{key}{String value. Provided by the Yahoo Developer Network
 when creating the application.}
 
-\item{secret}{string, provided by the Yahoo Developer network
+\item{secret}{String value. Provided by the Yahoo Developer Network
 when creating the application.}
 }
 \value{
-a signature object used to authenticate API calls
+This is called for its side effect. Creates a signature
+object used to authenticate API calls when using the GetLeagueData
+function.
 }
 \description{
 Authenticates the user for Yahoo API.  Requires the user

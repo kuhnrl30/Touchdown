@@ -3,3 +3,4 @@
 ^\.httr-oauth$
 ^NEWS\.md$
 ^\.Rprofile$
+^.*\Creds.txt

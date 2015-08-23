@@ -2,7 +2,7 @@
 % Please edit documentation in R/GetStats.R
 \name{GetStats}
 \alias{GetStats}
-\title{To get player stats from Yahoo sports}
+\title{This function allows you to get player stats from Yahoo sports}
 \usage{
 GetStats(category, year, week)
 }
@@ -19,9 +19,15 @@ with 17.  Post season data cannot be pulled with this
 function.}
 }
 \value{
-returns a dataframe with the desired stats
+A dataframe with the desired stats
 }
 \description{
-To get player stats from Yahoo sports
+This function allows you to get player stats from Yahoo sports
+}
+\examples{
+GetStats("Passing",2014,1)
+}
+\author{
+Ryan Kuhn
 }
 
