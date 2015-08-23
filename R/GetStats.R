@@ -41,7 +41,7 @@ GetStats<- function(category,year,week){
   base<- "http://sports.yahoo.com/nfl/stats/bycategory?"
   
   URI<- paste(base,
-            paste("cat",unlist(category),sep="="),
+            paste("cat",category,sep="="),
             "conference=NFL",
             paste("year=season_",year,sep=""),
             paste("timeframe=Week",week,sep=""),
