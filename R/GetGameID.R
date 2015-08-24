@@ -8,7 +8,7 @@
 #'
 #' @param sig output from the GetSig() function
 #' @return Game ID number as character
-#' @import RJSONIO
+#' @importFrom  RJSONIO fromJSON
 #' @import httr
 #' @export
 

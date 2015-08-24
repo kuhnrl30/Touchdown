@@ -8,5 +8,5 @@ Description: This package interfaces with the Yahoo Fantasy
 Author: Ryan Kuhn
 Maintainer: Ryan Kuhn <ryan@ryankuhn.net>
 License: GPL
-Imports: XML, RJSONIO, httr
+Imports: XML, RJSONIO, httr, plyr
 URL: htto://github.com/kuhnrl30/touchdown
