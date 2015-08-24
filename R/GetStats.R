@@ -13,6 +13,7 @@
 #' @author Ryan Kuhn
 #' @examples
 #' GetStats("Passing",2014,1)
+#' @importFrom plyr rbind.fill
 #' @export
 
 
@@ -35,21 +36,18 @@ GetStats<- function(category,year,week){
   if(as.numeric(year)<2000)
     stop("Year must be greater than 2000")
 
-  if(as.numeric(week)>17)
+  if(max(week)>17)
     stop("There are onlu 17 weeks in a season")
-
-  base<- "http://sports.yahoo.com/nfl/stats/bycategory?"
   
-  URI<- paste(base,
-            paste("cat",category,sep="="),
-            "conference=NFL",
-            paste("year=season_",year,sep=""),
-            paste("timeframe=Week",week,sep=""),
-            sep="&")
+  if(as.numeric(min(week))<1)
+    stop("Weeks value must be greater than 0")
 
-  GetData(URI)
-
+ 
+  URIList<-lapply(week,function(x) GenerateURI(category,year,x))
+  
+  x<-lapply(URIList,function(x) GetData(x))
+  y<-mapply(cbind,x,Week=week,SIMPLIFY=F)
+  plyr::rbind.fill(y)
+  
 }
-
-#GetStats("Passing","2014","12")
 
