@@ -1,4 +1,4 @@
-#' Score the passing stats
+#' Score the receiving stats
 #'
 #' Applies scoring rules to the player statistics
 #'
@@ -17,11 +17,9 @@
 #' 
 
 
-ScorePassing<- function(x,
-                        PassingYds=c(25,1),
-                        PassingTD=4,
-                        PassingInterception=-1,
-                        FumbleLost=-2){
+ScoreReceiving<- function(x,
+                          ReceivingYds=c(10,1),
+                          ReceivingTD=4){
   
   a<- as.matrix(as.numeric(x$TD),
                 as.numeric(x$Int),
@@ -30,26 +28,6 @@ ScorePassing<- function(x,
   b<- as.matrix(PassingTD,PassingInterception,FumbleLost)
   b%*%t(a) + as.numeric(x$Yds)%/%PassingYds[1]*PassingYds[2]
 }
-  
-                        
-                        
 
 #                         ReceivingYds=c(10,1),
 #                         ReceivingTD=6,
-#                              ReturnTD=6,
-#                              2PointConversion=2,
-#                              OffFumbleTD=6,
-#                              
-#                              Sacks=1,
-#                              Interception=2,
-#                              FumbleRecovered=2,
-#                              DefenseTD=6,
-#                              Safety=2,
-#                              BlockedKick=2,
-#                              ReturnForTD=6,
-#                              Shutout=10,
-#                              Allowed6=7,
-#                              Allowed13=4,
-#                              Allowed27=0
-#                              Allowed34=-1,
-#                              Allowed35=-4)
