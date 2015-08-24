@@ -14,10 +14,8 @@ NULL
 #' 
 #' A dataset containing 6 different categories of statistics.
 #' categories are as follows: 
-#' 
-#' @format A list of 6 dataframes each of different categories:
 #' \itemize{
-#' \item Passing: Stats cuch as QB Rating, Completions, 
+#' \item Passing: Stats such as QB Rating, Completions, 
 #' Attempts, and Touchdowns
 #' \item Rushing: Stats such as Touchdowns, Fumbles, 
 #' Yards, and Touchdowns
@@ -30,4 +28,35 @@ NULL
 #' \item Defense: Stats such as Sacks, interceptions, forced 
 #' fumbles, and touchdowns.
 #' }
-"PlayerStats"
+#' @name PlayerStats
+#' @docType data
+#' @usage data(PlayerStats)
+#' @keywords data
+#' @format A list of 6 dataframes each of different categories:
+NULL
+
+#' 2014 player passing statistics
+#' 
+#' A dataset containing passing statistics for NFL players from 2014
+#' \itemize{
+#' \item Name: Player name
+#' \item Team: Player team
+#' \item QBRat: Quarterback rating
+#' \item Comp: Completed pases
+#' \item Att: Attempted pases
+#' \item Yds: Yards from completed passes
+#' \item Y/A: Yards after cathc
+#' \item Lng: Longest pass
+#' \item Int: Number of interceptions
+#' \item TD: Number of touchdowns
+#' \item Sack: Number of times the quarteback was sacked
+#' \item SackYds: Yard lost after sacks
+#' \item Fum: Fumble, both lost and recovered
+#' \item FumL: Fumbles lost to the defense
+#' \item Week: Week of the season
+#' }
+#' @name Passing
+#' @docType data
+#' @usage data(Passing)
+#' @keywords data
+NULL

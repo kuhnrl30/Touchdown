@@ -4,9 +4,15 @@
 \name{PlayerStats}
 \alias{PlayerStats}
 \title{2014 player statistics}
-\format{A list of 6 dataframes each of different categories:
+\format{A list of 6 dataframes each of different categories:}
+\usage{
+data(PlayerStats)
+}
+\description{
+A dataset containing 6 different categories of statistics.
+categories are as follows:
 \itemize{
-\item Passing: Stats cuch as QB Rating, Completions,
+\item Passing: Stats such as QB Rating, Completions,
 Attempts, and Touchdowns
 \item Rushing: Stats such as Touchdowns, Fumbles,
 Yards, and Touchdowns
@@ -18,13 +24,7 @@ completion percent
 and average yards
 \item Defense: Stats such as Sacks, interceptions, forced
 fumbles, and touchdowns.
-}}
-\usage{
-PlayerStats
 }
-\description{
-A dataset containing 6 different categories of statistics.
-categories are as follows:
 }
-\keyword{datasets}
+\keyword{data}
 

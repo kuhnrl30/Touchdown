@@ -4,3 +4,6 @@
 ^NEWS\.md$
 ^\.Rprofile$
 ^.*\Creds.txt
+^.*\Yahoo.R
+^\.Rhistory
+^\.git
