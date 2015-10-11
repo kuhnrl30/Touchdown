@@ -1,13 +1,20 @@
 #' This function generates the URI needed to pull the data
 #'
-#' @param category once of 7 categories corresponding to the
-#' types of data available.  Must be one of Passing",
-#' "Rushing, Receiving, Kicking, Returns, Punting",
-#' "or Defense"
+#' @param category One of 7 categories corresponding to the
+#' types of data available.  Must be one of the following:
+#' \itemize{
+#' \item Passing
+#' \item Rushing
+#' \item Receiving
+#' \item Kicking
+#' \item Returns
+#' \item Punting
+#' \item Defense
+#' }
 #' 
-#' @param year four digit year starting in 2000
+#' @param year Four digit year starting in 2000
 
-#' @param week Numerical. Weeks of the season starting 
+#' @param week Vector of Weeks of the season starting 
 #' with 1 and ending with 17. 
 #'  
 #' @return A string with the URI needed to query the Yahoo

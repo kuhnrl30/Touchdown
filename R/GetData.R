@@ -3,10 +3,10 @@
 #' Reads the HTML table with player statistics based on
 #. the given URI and returns a dataframe.
 #'
-#' @param URI string value. Properly formatted URI string. 
+#' @param URI Properly formatted URI string. 
 #' When sent to a browser, this URI would show Yahoo's 
 #' NFL player stats page.
-#' @return a dataframe with the player statistics
+#' @return Dataframe with the player statistics
 #' @import XML
 
 GetData<- function(URI){

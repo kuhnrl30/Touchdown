@@ -7,11 +7,11 @@
 GetSig(key, secret)
 }
 \arguments{
-\item{key}{String value. Provided by the Yahoo Developer Network
-when creating the application.}
+\item{key}{Provided by the Yahoo Developer Network when creating
+the application.}
 
-\item{secret}{String value. Provided by the Yahoo Developer Network
-when creating the application.}
+\item{secret}{Provided by the Yahoo Developer Network when
+creating the application.}
 }
 \value{
 This is called for its side effect. Creates a signature

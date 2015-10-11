@@ -7,12 +7,12 @@
 GetData(URI)
 }
 \arguments{
-\item{URI}{string value. Properly formatted URI string.
+\item{URI}{Properly formatted URI string.
 When sent to a browser, this URI would show Yahoo's
 NFL player stats page.}
 }
 \value{
-a dataframe with the player statistics
+Dataframe with the player statistics
 }
 \description{
 Reads the HTML table with player statistics based on

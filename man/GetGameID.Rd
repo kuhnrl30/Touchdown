@@ -7,7 +7,7 @@
 GetGameID(sig)
 }
 \arguments{
-\item{sig}{output from the GetSig() function}
+\item{sig}{Output from the GetSig() function}
 }
 \value{
 Game ID number as character

@@ -7,15 +7,22 @@
 GetStats(category, year, week)
 }
 \arguments{
-\item{category}{once of 7 categories corresponding to the
-types of data available.  Must be one of Passing",
-"Rushing, Receiving, Kicking, Returns, Punting",
-"or Defense"}
+\item{category}{Quoted string. One of 7 categories corresponding to the
+types of data available.  Must be one of:
+\itemize{
+\item "Defense"
+\item "Kicking"
+\item "Passing"
+\item "Punting"
+\item "Receiving"
+\item "Returns"
+\item "Rushing"
+}}
 
-\item{year}{four digit year starting in 2000}
+\item{year}{Four digit year starting in 2000}
 
-\item{week}{week of the season starting with 1 and ending
-with 17.  Post season data cannot be pulled with this
+\item{week}{Week of the season starting with 1 and ending
+with 17.  Note: Post season data cannot be pulled with this
 function.}
 }
 \value{
@@ -26,8 +33,5 @@ This function allows you to get player stats from Yahoo sports
 }
 \examples{
 GetStats("Passing",2014,1)
-}
-\author{
-Ryan Kuhn
 }
 

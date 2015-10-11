@@ -2,7 +2,7 @@
 % Please edit documentation in R/ScorePassing.R
 \name{ScorePassing}
 \alias{ScorePassing}
-\title{Score the passing stats}
+\title{Score the passing statistics}
 \usage{
 ScorePassing(x, PassingYds = c(25, 1), PassingTD = 4,
   PassingInterception = -1, FumbleLost = -2)
@@ -15,12 +15,12 @@ of the format produced by the GetStats() function.}
 point value. As an example, a player is awarded 1 point for
 every 25 yards, then the score rule is of the format c(25,1)}
 
-\item{PassingTD}{Number of points awarded for passing touchdowns}
+\item{PassingTD}{Points awarded for passing touchdowns}
 
-\item{PassingInterception}{Number of points awarded for interceptions
+\item{PassingInterception}{Points awarded for interceptions
 thrown. Use a negative value if points are lost for interceptions.}
 
-\item{FumbleLost}{Number of point awarded for each fumble lost.
+\item{FumbleLost}{Points awarded for each fumble lost.
 Since this function is for offensive stats, a fumble lost would occur
 when the defense recovers the fumble.}
 }
@@ -28,6 +28,7 @@ when the defense recovers the fumble.}
 1 by nrow(x) matrix with the total score for each row
 }
 \description{
-Applies scoring rules to the player statistics
+Applies scoring rules to the player statistics.
+Default values are set to the standard scoring values.
 }
 

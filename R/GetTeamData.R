@@ -1,22 +1,21 @@
 #' Function to return the team data
 #'
-#' Returns data on the team
+#' Returns data on the fantasy football team
 #'
-#' @param GameID Character value.  The number assigned
+#' @param GameID The number assigned
 #' to the annual fantasy footbal compettion. Games should 
 #' not be confused with a weekly NFL football game. See 
-#' alse the GetGameID() function. 
+#' also the GetGameID() function. 
 #'
-#' @param LeagueID Character value. The ID number
-#' representing the specific fantasy football league. 
+#' @param LeagueID The ID number representing the specific 
+#' fantasy football league. 
 #'
-#' @param team Character value. The team ID, possibley values
-#' are based on the number of teams in the league: typically
+#' @param team The team ID, possible values
+#' are based on the number of teams in the league, ypically
 #' ranging from 1-10.
 #'
-#' @param DataType Character value. The type of data desired 
-#' for the team. Possible values are stats, standings, or 
-#' matchups.
+#' @param DataType The type of data desired for the team. 
+#' Possible values are stats, standings, or matchups.
 #'
 #' @param sig See also the GetSig() function
 #' @return List. Fiels will vary by the datatype used.

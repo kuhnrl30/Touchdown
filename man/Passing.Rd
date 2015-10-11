@@ -3,20 +3,16 @@
 \docType{data}
 \name{Passing}
 \alias{Passing}
-\title{2014 player passing statistics}
-\usage{
-data(Passing)
-}
-\description{
-A dataset containing passing statistics for NFL players from 2014
+\title{Weekly player passing statistics (2012-2014)}
+\format{A dataframe of 2448 rows and 17 variables:
 \itemize{
 \item Name: Player name
 \item Team: Player team
 \item QBRat: Quarterback rating
-\item Comp: Completed pases
-\item Att: Attempted pases
+\item Comp: Completed passes
+\item Att: Attempted passes
 \item Yds: Yards from completed passes
-\item Y/A: Yards after cathc
+\item Y/A: Yards after catch
 \item Lng: Longest pass
 \item Int: Number of interceptions
 \item TD: Number of touchdowns
@@ -25,7 +21,13 @@ A dataset containing passing statistics for NFL players from 2014
 \item Fum: Fumble, both lost and recovered
 \item FumL: Fumbles lost to the defense
 \item Week: Week of the season
+\item Year: year or season
+}}
+\usage{
+data(Passing)
 }
+\description{
+A dataset containing passing statistics for NFL players from the 2012 through 2014 seasons
 }
 \keyword{data}
 

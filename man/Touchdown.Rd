@@ -4,8 +4,12 @@
 \name{Touchdown}
 \alias{Touchdown}
 \alias{Touchdown-package}
-\title{Touchdown}
+\title{Touchdown: A wrapper for the Yahoo Sports API}
 \description{
-Touchdown
+The Touchdown package enables you to use the Yahoo Sports API to
+retrieve data about your fantasy football team and analyze your
+your stats using the power of R. The package also contains 3 years
+of player stats from 2012 to 2014 seasons to help you build your
+new fantasy team.
 }
 

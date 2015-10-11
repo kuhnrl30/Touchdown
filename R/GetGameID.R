@@ -6,7 +6,7 @@
 #' level in the API heirarchy. Games should not be confused
 #' with an weekly NFL football game. 
 #'
-#' @param sig output from the GetSig() function
+#' @param sig Output from the GetSig() function
 #' @return Game ID number as character
 #' @importFrom  RJSONIO fromJSON
 #' @import httr

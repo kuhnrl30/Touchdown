@@ -11,27 +11,28 @@ ScoreKicking(x, FieldGoal19 = 3, FieldGoal29 = 3, FieldGoal39 = 3,
 \item{x}{dataframe of player statistics data. Should be
 of the format produced by the GetStats() function.}
 
-\item{FieldGoal19}{Number of points awarded for field goals with
+\item{FieldGoal19}{Points awarded for field goals with
 a range of 19 yards or less.}
 
-\item{FieldGoal29}{Number of points awarded for field goals with
+\item{FieldGoal29}{Points awarded for field goals with
 range greater than 19 yards and a far as 29 yards}
 
-\item{FieldGoal39}{Number of points awarded for field goals with
+\item{FieldGoal39}{Points awarded for field goals with
 range greater than 29 yards and a far as 39 yards}
 
-\item{FieldGoal49}{Number of points awarded for field goals with
+\item{FieldGoal49}{Points awarded for field goals with
 range greater than 39 yards and a far as 49 yards}
 
-\item{FieldGoal50}{Number of points awarded for field goals with
+\item{FieldGoal50}{Points awarded for field goals with
 range greater than 50 yards}
 
-\item{ExtraPoint}{Number of points awarded for extra points}
+\item{ExtraPoint}{Points awarded for extra points}
 }
 \value{
 1 by nrow(x) matrix with the total score for each row
 }
 \description{
-Applies scoring rules to the player statistics
+Applies scoring rules to the player kicking statistics.
+Default values are set to the standard scoring values.
 }
 

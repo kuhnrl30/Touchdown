@@ -7,14 +7,21 @@
 GenerateURI(category, year, week)
 }
 \arguments{
-\item{category}{once of 7 categories corresponding to the
-types of data available.  Must be one of Passing",
-"Rushing, Receiving, Kicking, Returns, Punting",
-"or Defense"}
+\item{category}{One of 7 categories corresponding to the
+types of data available.  Must be one of the following:
+\itemize{
+\item Passing
+\item Rushing
+\item Receiving
+\item Kicking
+\item Returns
+\item Punting
+\item Defense
+}}
 
-\item{year}{four digit year starting in 2000}
+\item{year}{Four digit year starting in 2000}
 
-\item{week}{Numerical. Weeks of the season starting
+\item{week}{Vector of Weeks of the season starting
 with 1 and ending with 17.}
 }
 \value{

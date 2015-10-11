@@ -4,10 +4,10 @@
 #' to supply a key and secret after setting up their app
 #' on the Yahoo Developer Network
 #'
-#' @param key String value. Provided by the Yahoo Developer Network
-#' when creating the application.
-#' @param secret String value. Provided by the Yahoo Developer Network
-#' when creating the application.
+#' @param key Provided by the Yahoo Developer Network when creating 
+#' the application.
+#' @param secret Provided by the Yahoo Developer Network when 
+#' creating the application.
 #' @return This is called for its side effect. Creates a signature 
 #' object used to authenticate API calls when using the GetLeagueData
 #' function.
@@ -17,13 +17,11 @@
 
 
 GetSig<- function(key,secret){
-  # library(httr)
   options("httr_oob_default" = TRUE)
   tokenURL      <- "https://api.login.yahoo.com/oauth/v2/get_request_token" # Get request token
   accessTokenURL<- "https://api.login.yahoo.com/oauth/v2/get_token" # Request access token
   authorizeURL  <- "https://api.login.yahoo.com/oauth/v2/request_auth" #Get user auth
 
-  # Getting authentcated
   App   <- httr::oauth_app("yahoo",key,secret)
   yahoo <- httr::oauth_endpoint(request=tokenURL,authorizeURL,accessTokenURL)
   token <- httr::oauth1.0_token(yahoo,App)

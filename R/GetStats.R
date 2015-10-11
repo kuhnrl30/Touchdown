@@ -1,16 +1,22 @@
 #' This function allows you to get player stats from Yahoo sports
 #'
-#' @param category once of 7 categories corresponding to the
-#' types of data available.  Must be one of Passing",
-#' "Rushing, Receiving, Kicking, Returns, Punting",
-#' "or Defense"
-#' @param year four digit year starting in 2000
-
-#' @param week week of the season starting with 1 and ending
-#'  with 17.  Post season data cannot be pulled with this
+#' @param category Quoted string. One of 7 categories corresponding to the
+#' types of data available.  Must be one of:
+#' \itemize{
+#' \item "Defense"
+#' \item "Kicking"
+#' \item "Passing"
+#' \item "Punting"
+#' \item "Receiving"
+#' \item "Returns"
+#' \item "Rushing"
+#' }
+#' 
+#' @param year Four digit year starting in 2000
+#' @param week Week of the season starting with 1 and ending
+#'  with 17.  Note: Post season data cannot be pulled with this
 #'  function.
 #' @return A dataframe with the desired stats
-#' @author Ryan Kuhn
 #' @examples
 #' GetStats("Passing",2014,1)
 #' @importFrom plyr rbind.fill

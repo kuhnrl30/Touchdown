@@ -7,21 +7,20 @@
 GetTeamData(GameID, LeagueID, team = 1, DataType = "stats", sig)
 }
 \arguments{
-\item{GameID}{Character value.  The number assigned
+\item{GameID}{The number assigned
 to the annual fantasy footbal compettion. Games should
 not be confused with a weekly NFL football game. See
-alse the GetGameID() function.}
+also the GetGameID() function.}
 
-\item{LeagueID}{Character value. The ID number
-representing the specific fantasy football league.}
+\item{LeagueID}{The ID number representing the specific
+fantasy football league.}
 
-\item{team}{Character value. The team ID, possibley values
-are based on the number of teams in the league: typically
+\item{team}{The team ID, possible values
+are based on the number of teams in the league, ypically
 ranging from 1-10.}
 
-\item{DataType}{Character value. The type of data desired
-for the team. Possible values are stats, standings, or
-matchups.}
+\item{DataType}{The type of data desired for the team.
+Possible values are stats, standings, or matchups.}
 
 \item{sig}{See also the GetSig() function}
 }
@@ -29,6 +28,6 @@ matchups.}
 List. Fiels will vary by the datatype used.
 }
 \description{
-Returns data on the team
+Returns data on the fantasy football team
 }
 

@@ -10,23 +10,17 @@ ScoreReceiving(x, ReceivingYds = c(10, 1), ReceivingTD = 4)
 \item{x}{dataframe of player statistics data. Should be
 of the format produced by the GetStats() function.}
 
-\item{PassingYds}{Vector with the yardage increment and
+\item{ReceivingYds}{Vector with the yardage increment and
 point value. As an example, a player is awarded 1 point for
-every 25 yards, then the score rule is of the format c(25,1)}
+every 10 yards, then the score rule is of the format c(10,1)}
 
-\item{PassingTD}{Number of points awarded for passing touchdowns}
-
-\item{PassingInterception}{Number of points awarded for interceptions
-thrown. Use a negative value if points are lost for interceptions.}
-
-\item{FumbleLost}{Number of point awarded for each fumble lost.
-Since this function is for offensive stats, a fumble lost would occur
-when the defense recovers the fumble.}
+\item{ReceivingTD}{Points awarded for receiving touchdowns}
 }
 \value{
 1 by nrow(x) matrix with the total score for each row
 }
 \description{
-Applies scoring rules to the player statistics
+Applies scoring rules to the player statistics. Default
+values are set to the standard scoring values.
 }
 

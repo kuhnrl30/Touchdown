@@ -14,9 +14,9 @@ of the format produced by the GetStats() function.}
 point value. As an example, a player is awarded 1 point for
 every 10 yards, then the score rule is of the format c(10,1)}
 
-\item{RushingTD}{Number of points awarded for rushing touchdowns}
+\item{RushingTD}{Points awarded for rushing touchdowns}
 
-\item{FumbleLost}{Number of point awarded for each fumble lost.
+\item{FumbleLost}{Points awarded for each fumble lost.
 Since this function is for offensive stats, a fumble lost would occur
 when the defense recovers the fumble.}
 }
@@ -24,6 +24,7 @@ when the defense recovers the fumble.}
 1 by nrow(x) matrix with the total score for each row
 }
 \description{
-Applies scoring rules to the player statistics
+Applies scoring rules to the player statistics. Default
+values are set to the standard scoring values.
 }
 

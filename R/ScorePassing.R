@@ -1,16 +1,17 @@
-#' Score the passing stats
+#' Score the passing statistics
 #'
-#' Applies scoring rules to the player statistics
+#' Applies scoring rules to the player statistics. 
+#' Default values are set to the standard scoring values.
 #'
 #' @param x dataframe of player statistics data. Should be
 #' of the format produced by the GetStats() function.
 #' @param PassingYds Vector with the yardage increment and 
 #' point value. As an example, a player is awarded 1 point for
 #' every 25 yards, then the score rule is of the format c(25,1)
-#' @param PassingTD Number of points awarded for passing touchdowns
-#' @param PassingInterception Number of points awarded for interceptions
+#' @param PassingTD Points awarded for passing touchdowns
+#' @param PassingInterception Points awarded for interceptions
 #' thrown. Use a negative value if points are lost for interceptions.
-#' @param FumbleLost Number of point awarded for each fumble lost. 
+#' @param FumbleLost Points awarded for each fumble lost. 
 #' Since this function is for offensive stats, a fumble lost would occur
 #' when the defense recovers the fumble.
 #' @return 1 by nrow(x) matrix with the total score for each row
